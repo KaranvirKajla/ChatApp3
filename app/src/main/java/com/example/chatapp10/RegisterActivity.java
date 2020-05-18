@@ -45,7 +45,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        getSupportActionBar().setTitle("Sign Up");
+
 
         onRegisterButtonClick();
         onLoginClick();

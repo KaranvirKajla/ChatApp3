@@ -1,78 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity"
-    android:orientation="vertical"
 
-    android:padding="10dp"
-    android:gravity="center"
+
+
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/loginbackground"
     >
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:src="@drawable/chatapp" />
-    <EditText
-        android:id="@+id/email"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:hint="Email"
-        android:background="@drawable/edit_text_background"/>
+        android:orientation="vertical"
+       >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="and start meeting new friends around the world"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:hint="Email"
+            android:background="@drawable/email"
+            android:paddingStart="60dp"
+            android:paddingEnd="5dp"
+            android:textColorHint="@color/white"
+            />
         android:inputType="textEmailAddress" />
 
-    <EditText
-        android:id="@+id/name"
+        <EditText
+            android:id="@+id/name"
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Name"
-        android:background="@drawable/edit_text_background"/>
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:background="@drawable/name"
+            android:paddingStart="60dp"
+            android:paddingEnd="5dp"
+            android:textColorHint="@color/white"/>
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:background="@drawable/edit_text_background"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/password"
+            android:paddingStart="60dp"
+            android:paddingEnd="5dp"
+            android:textColorHint="@color/white"
+            />
 
-    <EditText
-        android:id="@+id/confirmPassword"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Confirm Password"
-        android:inputType="textPassword"
-        android:background="@drawable/edit_text_background"/>
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:background="@drawable/password"
+            android:paddingStart="60dp"
+            android:paddingEnd="5dp"
+            android:textColorHint="@color/white"/>
 
-    <Button
-        android:id="@+id/register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Sign Up"
-        android:textColor="@color/white"
-        android:background="@drawable/button_background"/>
-    <TextView
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/login"/>
+
+
+    </LinearLayout>
+   <TextView
         android:id="@+id/login"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:textColor="@color/colorPrimary"
+
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:text="Already a user? Login.."
+       android:layout_alignParentBottom="true"
         />
 
 
 
-</LinearLayout>
+</RelativeLayout>

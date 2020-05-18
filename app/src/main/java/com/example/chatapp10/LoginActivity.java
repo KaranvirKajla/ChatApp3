@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        getSupportActionBar().setTitle("Login");
+
         onLoginButtonClick();
         onRegisterClick();
     }

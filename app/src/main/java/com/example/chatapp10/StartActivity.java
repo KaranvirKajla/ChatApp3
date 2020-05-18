@@ -3,6 +3,7 @@ package com.example.chatapp10;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,10 @@ public class StartActivity extends AppCompatActivity {
         register = findViewById(R.id.register);
         login = findViewById(R.id.login);
         mAuth = FirebaseAuth.getInstance();
+
+        MediaPlayer player = MediaPlayer.create(StartActivity.this,R.raw.messagealert);
+        player.start();
+
         onRegisterButtonClick();
         onLoginButtonClick();
     }

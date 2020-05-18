@@ -22,6 +22,7 @@ import java.util.List;
 import Models.Message;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHolder>{
@@ -60,9 +61,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         Log.d("adapterMessage","myEmail = "+myEmail);
         if(message.getFrom().equals(myEmail)){
             Log.d("adapterMessage",message.getFrom() + " "+message.getMessage());
-            holder.cardView.setBackgroundColor(Color.GREEN);
+            holder.cardView.setBackgroundColor(ContextCompat.getColor(mContext,R.color.green));
             RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
             params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+
             holder.cardView.setLayoutParams(params);
         }else{
 

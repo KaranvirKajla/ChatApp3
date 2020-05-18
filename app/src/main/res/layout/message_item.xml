@@ -4,7 +4,9 @@
 
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="@drawable/message_background"
+    >
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card"
@@ -12,7 +14,7 @@
         android:layout_height="wrap_content"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:padding="10dp"
-
+        android:background="@drawable/message_background"
         >
 
         <LinearLayout
